@@ -1,2 +1,3 @@
 # First-Down-
-new repo 
+What we need to do: 
+home page, nav page, footer 
