@@ -1,12 +1,12 @@
 
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-import Header from './header.tsx';
+import Header from './LandingPage/header.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Header message='This is a test' /> 
-      <h1 style={{textAlign: 'center'}}>Starting Fresh</h1>
+      <Header /> 
     </div>
   );
 }
