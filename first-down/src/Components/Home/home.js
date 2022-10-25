@@ -1,4 +1,5 @@
 import React from 'react'
+import './home.styles.css';
 
 const Home = () => {
 return (
@@ -17,17 +18,21 @@ return (
                 with desktop publishing software like Aldus PageMaker including versions
                 of Lorem Ipsum.</p>
 
-                <button>CTA</button>
-                <button>Learn More</button>
+                <button className='cta'>CTA</button>
+                <button className='learn-more'>Learn More</button>
                 
-                <h6>Works with</h6>
-                <div className='social-media'>
-                    <ul>
-                        <li className='Instagram'></li>
-                        <li className='Facebook'></li>
-                        <li className='Twitter'></li>
-                    </ul>
-                </div>
+                <h4>Works with</h4>
+                    <div className='social-media'>
+                        <div className='Instagram'>
+                            <img src={require('../../assets/instagram.png')} alt ='' />
+                        </div>
+                        <div className='Facebook'>
+                        <img src={require('../../assets/facebook.png')} alt ='' />
+                        </div>
+                        <div className='Twitter'>
+                        <img src={require('../../assets/twitter.png')} alt ='' />
+                        </div>
+                    </div>
             </div>
             <div className='right-container'>
             <img src={require('../../assets/Ballast Point.png')} 

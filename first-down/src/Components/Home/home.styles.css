@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    width: 100%;
+}
+.main-container {
+    background-color: #324909;
+    display: flex;
+}
+
+.left-container {
+    margin: 4% 3% 2% 3%;
+}
+
+h1 {
+    margin-bottom: 2%;
+}
+
+.right-container {
+    margin: 4% 3% 4% 0; 
+}
+.cta {
+    background-color: darkslategrey;
+    color: white;
+    border: none; 
+    max-width: 10%;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10%;
+    margin-top: 4%;
+}
+.learn-more {
+    max-width: 20%;
+    margin-left: 7.5%;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10%;
+    border: solid darkslategrey 2px;
+    margin-bottom: 4%;
+}
+
+h4 {
+    margin-bottom: 3%;
+}
+
+.social-media {
+    display: flex;
+    max-width: 25%;
+    gap: 12%;
+}
+
+
+
+
