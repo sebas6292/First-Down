@@ -1,4 +1,6 @@
 import React from 'react'
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 
 const Header = () => {
@@ -47,9 +49,27 @@ const Header = () => {
                 <li className="dropdown-item">Create Account</li>
               </ul>
           </div>
+
+          <DropdownButton   
+            id="dropdown-button-dark-example2"
+            variant="secondary"
+            menuVariant="dark"
+            className="mt-2" title="Pricing">
+          <Dropdown.Item href="#beginner">Beginner Athelte</Dropdown.Item>
+          <Dropdown.Item href="#recreational">Recreational Athlete</Dropdown.Item>
+          <Dropdown.Item href="#pro">Pro Athlete</Dropdown.Item>
+          </DropdownButton>
       </div>
     </div>
   )
 }
 
-export default Header
+export default Header;
+
+// <label className="dropdown">Pricing
+// <select>
+//   <option value="athlete">Athlete</option>
+//   <option value="recreational athlete">Recreational Athlete</option>
+//   <option value="pro athlete">Pro Athlete</option>
+// </select>
+// </label> 
