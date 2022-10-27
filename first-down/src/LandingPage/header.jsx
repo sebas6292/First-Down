@@ -30,26 +30,6 @@ const Header = () => {
                 <li><a class="dropdown-item" href="#sport">Sport Training</a></li>
               </ul>
           </div>
-          <div className="dropdown">
-              <button className="btn btn-outline-secondary text-white text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Pricing
-              </button>
-              <ul className="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#beginner">Beginner Athelte</a></li>
-                <li><a class="dropdown-item" href="#recreational">Recreational Athlete</a></li>
-                <li><a class="dropdown-item" href="#pro">Pro Athlete</a></li>
-              </ul>
-          </div>
-          <div className="dropdown">
-              <button className="btn btn-outline-secondary text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Register / Log In
-              </button>
-              <ul className="dropdown-menu dropdown-menu-dark">
-                <li className="dropdown-item">Returning Member?</li>
-                <li className="dropdown-item">Create Account</li>
-              </ul>
-          </div>
-
           <DropdownButton   
             id="dropdown-button-dark-example2"
             variant="secondary"
@@ -59,6 +39,16 @@ const Header = () => {
           <Dropdown.Item href="#recreational">Recreational Athlete</Dropdown.Item>
           <Dropdown.Item href="#pro">Pro Athlete</Dropdown.Item>
           </DropdownButton>
+         
+          <div className="dropdown">
+              <button className="btn btn-outline-secondary text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Register / Log In
+              </button>
+              <ul className="dropdown-menu dropdown-menu-dark">
+                <li className="dropdown-item">Returning Member?</li>
+                <li className="dropdown-item">Create Account</li>
+              </ul>
+          </div>
       </div>
     </div>
   )
@@ -73,3 +63,14 @@ export default Header;
 //   <option value="pro athlete">Pro Athlete</option>
 // </select>
 // </label> 
+// <div className="dropdown">
+// <button className="btn btn-outline-secondary text-white text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+//   Pricing
+// </button>
+// <ul className="dropdown-menu dropdown-menu-dark">
+// <li><a class="dropdown-item" href="#beginner">Beginner Athelte</a></li>
+//   <li><a class="dropdown-item" href="#recreational">Recreational Athlete</a></li>
+//   <li><a class="dropdown-item" href="#pro">Pro Athlete</a></li>
+// </ul>
+// </div>
+
