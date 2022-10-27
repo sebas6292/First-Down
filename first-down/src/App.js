@@ -1,13 +1,14 @@
 
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-import Header from './header.tsx';
-import Home from './Components/Home/home.js';
+import Header from './LandingPage/header';
+import Display from './LandingPage/display';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Home />
+    <div>
+      <Header /> 
+      <Display/>
     </div>
   );
 }
