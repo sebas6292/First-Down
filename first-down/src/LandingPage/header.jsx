@@ -59,8 +59,6 @@ const Header = () => {
   )
 }
 
-
-
 export default Header;
 
 // <label className="dropdown">Pricing
