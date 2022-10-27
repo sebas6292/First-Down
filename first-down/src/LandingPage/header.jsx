@@ -10,45 +10,50 @@ const Header = () => {
         <h1>Logo</h1>
       </div>
       <div className='w-50 d-flex justify-content-evenly'>
-          <div className="dropdown">
-              <button className="btn btn-outline-secondary text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Leagues
-              </button>
-              <ul className="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#basketball">Basketball</a></li>
-                <li><a class="dropdown-item" href="#soccer">Soccer</a></li>
-                <li><a class="dropdown-item" href="#football">Flag Football</a></li>
-              </ul>
-          </div>
-          <div className="dropdown">
-              <button className="btn btn-outline-secondary text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Training Classes
-              </button>
-              <ul className="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#strength">Strength Training</a></li>
-                <li><a class="dropdown-item" href="#cardio">Cardio Training</a></li>
-                <li><a class="dropdown-item" href="#sport">Sport Training</a></li>
-              </ul>
-          </div>
+
+            <DropdownButton   
+            id="dropdown-button-dark-example2"
+            variant="secondary"
+            menuVariant="dark"
+            className="" 
+            title="Leagues"
+            type="button"
+            data-bs-toggle="dropdown" 
+            aria-expanded="false"
+            >
+          <Dropdown.Item href="#basketball">Basketball</Dropdown.Item>
+          <Dropdown.Item href="#soccer">Soccer</Dropdown.Item>
+          <Dropdown.Item href="#football">Flag Football</Dropdown.Item>
+          </DropdownButton>
+
+          <DropdownButton   
+          id="dropdown-button-dark-example2"
+          variant="secondary"
+          menuVariant="dark"
+          className="" title="Training Classes">
+        <Dropdown.Item href="#strength">Strength Training</Dropdown.Item>
+        <Dropdown.Item href="#cardio">Cardio Training</Dropdown.Item>
+        <Dropdown.Item href="#sport">Sport Training</Dropdown.Item>
+        </DropdownButton>
           <DropdownButton   
             id="dropdown-button-dark-example2"
             variant="secondary"
             menuVariant="dark"
-            className="mt-2" title="Pricing">
+            className="" title="Pricing">
           <Dropdown.Item href="#beginner">Beginner Athelte</Dropdown.Item>
           <Dropdown.Item href="#recreational">Recreational Athlete</Dropdown.Item>
           <Dropdown.Item href="#pro">Pro Athlete</Dropdown.Item>
           </DropdownButton>
          
-          <div className="dropdown">
-              <button className="btn btn-outline-secondary text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Register / Log In
-              </button>
-              <ul className="dropdown-menu dropdown-menu-dark">
-                <li className="dropdown-item">Returning Member?</li>
-                <li className="dropdown-item">Create Account</li>
-              </ul>
-          </div>
+          <DropdownButton   
+          id="dropdown-button-dark-example2"
+          variant="secondary"
+          menuVariant="dark"
+          className="" title="Register/Login">
+        <Dropdown.Item href="#beginner">Returning Member?</Dropdown.Item>
+        <Dropdown.Item href="#recreational">Create Account</Dropdown.Item>
+        </DropdownButton>
+        
       </div>
     </div>
   )
